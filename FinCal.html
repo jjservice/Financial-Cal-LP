@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOLLIPOP FINANCIAL CALCULATOR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="FinCal.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>LOLLIP<ion-icon name="calculator"></ion-icon>P</h1>
+       
+        <div class="tabs">
+            <div class="tab active" data-target="#future-value">Future Value</div>
+            <div class="tab" data-target="#loan-amortization">Loan</div>
+            <div class="tab" data-target="#savings-plan">Savings</div>
+            <div class="tab" data-target="#mortgage-calculator">Mortgage</div>
+            <div class="tab" data-target="#investment-return">Investment</div>
+        </div>
+
+        <div id="future-value" class="calculator active">
+            <div class="input-group">
+                <label for="principal">Principal Amount</label>
+                <input id="principal" placeholder="$0">
+            </div>
+            <div class="input-group">
+                <label for="rate">Annual Interest Rate (%)</label>
+                <input  id="rate" placeholder="%">
+            </div>
+            <div class="input-group">
+                <label for="time">Time (Years)</label>
+                <input id="time" placeholder="(0-Years)">
+            </div>
+            <div class="input-group">
+                <label for="compounds">Compounds per Year</label>
+                <input  id="compounds" placeholder="0">
+            </div>
+            <button id="calculate-future-value">Calculate F-V</button>
+            <div class="result" id="result-future-value">Future Value: $0</div>
+        </div>
+
+        <div id="loan-amortization" class="calculator">
+            <div class="input-group">
+                <label for="loan-principal">Loan Amount</label>
+                <input id="loan-principal" placeholder="$0">
+            </div>
+            <div class="input-group">
+                <label for="loan-rate">Annual Interest Rate (%)</label>
+                <input id="loan-rate" placeholder="%">
+            </div>
+            <div class="input-group">
+                <label for="loan-time">Time (Years)</label>
+                <input id="loan-time" placeholder="(0-Years)">
+            </div>
+            <button id="calculate-loan">Calculate Loan Payment</button>
+            <div class="result" id="result-loan-payment">Monthly EMI: $0<br>Total Amount Payable: $0<br>Interest Amount: $0</div>
+        </div>
+
+        <div id="savings-plan" class="calculator">
+            <div class="input-group">
+                <label for="savings-principal">Initial Savings</label>
+                <input  id="savings-principal" placeholder="$0">
+            </div>
+            <div class="input-group">
+                <label for="savings-rate">Annual Interest Rate (%)</label>
+                <input id="savings-rate" placeholder="%">
+            </div>
+            <div class="input-group">
+                <label for="savings-time">Time (Years)</label>
+                <input id="savings-time" placeholder="(0-Years)">
+            </div>
+            <div class="input-group">
+                <label for="savings-contribution">Annual Contribution</label>
+                <input id="savings-contribution" placeholder="$0">
+            </div>
+            <button id="calculate-savings">Calculate Savings</button>
+            <div class="result" id="result-savings">Total Savings: $0<br>Interest Earned: $0</div>
+        </div>
+
+        <div id="mortgage-calculator" class="calculator">
+          <div class="input-group">
+              <label for="mortgage-amount">Mortgage Amount</label>
+              <input id="mortgage-amount" placeholder="$0">
+          </div>
+          <div class="input-group">
+              <label for="down-payment">Down Payment (Optional)</label>
+              <input id="down-payment" placeholder="$0">
+          </div>
+          <div class="input-group">
+              <label for="mortgage-rate">Annual Interest Rate (%)</label>
+              <input id="mortgage-rate" placeholder="%">
+          </div>
+          <div class="input-group">
+              <label for="mortgage-time">Loan Term In Years</label>
+              <input id="mortgage-time" placeholder="(0-Years)">
+          </div>
+          <div class="input-group">
+              <label for="property-taxes">Property Taxes per Year (Optional)</label>
+              <input  id="property-taxes" placeholder="$0">
+          </div>
+          <div class="input-group">
+              <label for="insurance">Homeowners Insurance per Year (Optional)</label>
+              <input id="insurance" placeholder="$0">
+          </div>
+          <div class="input-group">
+              <label for="other-taxes">Other Taxes per Year (Optional)</label>
+              <input  id="other-taxes" placeholder="$0">
+          </div>
+          <button id="calculate-mortgage">Calculate Mortgage Payment</button>
+          <div class="result" id="result-mortgage">
+              Monthly Payment: $0<br>
+              Total Mortgage Payable: $0<br>
+              Mortgage Interest: $0
+          </div>
+      </div>
+
+        <div id="investment-return" class="calculator">
+            <div class="input-group">
+                <label for="investment-principal">Investment Amount</label>
+                <input id="investment-principal" placeholder="$0">
+            </div>
+            <div class="input-group">
+                <label for="investment-rate">Annual Interest Rate (%)</label>
+                <input  id="investment-rate" placeholder="%">
+            </div>
+            <div class="input-group">
+                <label for="investment-time">Time (Years)</label>
+                <input id="investment-time" placeholder="0">
+            </div>
+            <button id="calculate-investment">Calculate Investment Return</button>
+            <div class="result" id="result-investment">Total Return: $0<br>Profit Amount: $0</div>
+        </div>
+        <ul class="homebtn"><a href="https://jjservice.github.io/L2/1.html">
+            <ion-icon name="home"></ion-icon></a>
+        </ul>
+        <h3>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></h3>
+    </div>
+
+</body>
+<script src="FinCal.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
