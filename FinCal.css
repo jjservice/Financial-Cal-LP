@@ -210,3 +210,14 @@ body {
     cursor: pointer;
 
   }
+
+  @media (min-width: 768px){
+    body{
+      padding: 25px 0;
+    }
+    .calculator-container {
+      margin: 0% auto;
+      width: 650px; 
+    }
+
+  }
