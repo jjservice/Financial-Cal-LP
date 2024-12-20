@@ -96,3 +96,11 @@ document.querySelectorAll('.tab').forEach(tab => {
     document.getElementById('result-investment').innerHTML =
         `Total Return: $${Math.round(futureValue)}<br>Profit Amount: $${Math.round(profitAmount)}`;
   });
+
+
+  //// Light Section //////
+
+  function ToggleLight(){
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+  }
