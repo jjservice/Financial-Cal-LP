@@ -127,7 +127,7 @@ body {
   label {
     display: block;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: rgb(197, 196, 196);
     text-shadow: 1px 1px 1px darkblue;
@@ -179,14 +179,14 @@ body {
     width: auto;
     padding: 5px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     text-shadow: 0px 0px 2px darkblue;
     text-align: center;
     font-weight: bold;
     background-color: rgba(1, 1, 26, 0.329);
     border-radius: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
   body.light .result{
     color: white;
@@ -238,6 +238,12 @@ body {
     .calculator-container {
       margin: 0% auto;
       width: 650px; 
+    }
+    .result{
+      font-size: 25px;
+    }
+    label{
+      font-size: 20px;
     }
 
   }
